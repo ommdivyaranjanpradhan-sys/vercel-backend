@@ -15,15 +15,15 @@ router.get("/all", async (req, res) => {
   res.json(students);
 });
 
-router.get("/count", async (req, res) => {
-  const totalStudents = await Student.countDocuments();
-  res.json({ totalStudents });
-});
+// router.get("/count", async (req, res) => {
+//   const totalStudents = await Student.countDocuments();
+//   res.json({ totalStudents });
+// });
 
-// Delete student
-router.delete("/delete/:id", async (req, res) => {
-  await Student.findByIdAndDelete(req.params.id);
-  res.json({ msg: "Student deleted" });
-});
+// // Delete student
+// router.delete("/delete/:id", async (req, res) => {
+//   await Student.findByIdAndDelete(req.params.id);
+//   res.json({ msg: "Student deleted" });
+// });
 
 export default router;

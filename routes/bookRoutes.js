@@ -22,10 +22,10 @@ router.delete("/delete/:id", async (req, res) => {
 });
 
 
-router.get("/count", async (req, res) => {
-  const totalBooks = await Book.countDocuments();
-  res.json({ totalBooks });
-});
+// router.get("/count", async (req, res) => {
+//   const totalBooks = await Book.countDocuments();
+//   res.json({ totalBooks });
+// });
 
 export default router;
 
